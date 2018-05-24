@@ -1,0 +1,24 @@
+/* ex10.css */
+
+
+#d1 {
+	background-image: url(http://lorempixel.com/600/400/animals/8);
+	background-size: contain;
+	height: 400px;
+	width: 600px;
+}
+
+#d2 {
+	background-color: white;
+	opacity: .5;
+	height: 100%;
+}
+
+#main {
+	padding: 50px;
+	text-align: justify;
+	width: 500px;
+	height: 250px;
+	overflow: auto;
+	font-weight: bolder;
+}

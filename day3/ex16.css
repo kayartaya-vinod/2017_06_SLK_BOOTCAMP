@@ -1,0 +1,52 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	margin: 0 auto;
+	width: 1000px;
+}
+
+.header h1 {
+	text-align: center;
+}
+
+.row {
+	padding: 10px;
+}
+
+.row > label {
+	width: 200px;
+	display: inline-block
+}
+
+.row > div {
+	width: 500px;
+	display: inline-block;
+}
+
+form input {
+	padding: 5px;
+	font-size: 1.01em;
+}
+
+form button {
+	padding: 5px 15px;
+	font-size: 1.01em;
+}
+
+form a {
+	padding: 5px 15px;
+	font-size: 1.01em;
+}
+form a:hover {
+	box-shadow: 0 0 20px yellow;
+	
+}
+
+
+
+
+
+

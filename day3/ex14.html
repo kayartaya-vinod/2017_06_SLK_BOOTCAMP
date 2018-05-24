@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>JavaScript Basic Demo</title>
+
+	<script type="text/javascript">
+		alert("Hello, world!");
+		// prompt("Enter your name");
+		// confirm("Are you sure to delete this?");
+	</script>
+
+
+	<script type="text/javascript">
+		
+		// global function, same as window.square
+		function square(num){
+			// num, which is a function argument, is always a local variable
+
+			if(num!=undefined && typeof num == "number"){
+				return num * num;
+			}
+
+			throw "Invalid value or value was not supplied!";
+		}
+
+	</script>
+
+</head>
+<body>
+
+	<h1>JavaScript Basic Demo</h1>
+	<hr>
+	<p id="para1">
+		A Simple intro to JavaScript!
+	</p>
+
+
+</body>
+</html>

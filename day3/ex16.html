@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="./ex16.css">
+	<script type="text/javascript" src="./ex16.js"></script>
+</head>
+<body>
+	<div class="container">
+
+		<div class="header">
+			<h1>Login to access our product details</h1>
+		</div>
+		
+		<form method="POST" 
+			action="success.html" onsubmit="return validate()">
+			<div>
+				<div class="row">
+					<label for="email">Email address</label>
+					<div>
+						<input type="text" id="email" name="email" 
+							placeholder="Registered email">
+					</div>
+				</div>
+
+				<div class="row">
+					<label for="secret_code">Password</label>
+					<div>
+						<input type="password" name="secret_code" id="secret_code" placeholder="Secret code">
+					</div>
+				</div>
+
+				<div class="row">
+					<label></label>
+					<div>
+						<input type="checkbox" name="chk_remember" id="chk_remember">
+						<label for="chk_remember">Remember me on this machine</label>
+					</div>
+				</div>
+
+				<div class="row">
+					<label></label>
+					<div>
+						<button>Login</button>
+						<a href="">Register</a> | 
+						<a href="">Forgot password</a>
+					</div>
+				</div>
+
+			</div>
+		</form>
+
+		<div id="output"></div>
+	</div>
+</body>
+</html>

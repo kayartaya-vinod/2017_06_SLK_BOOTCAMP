@@ -1,0 +1,41 @@
+/* ex13.css */
+
+table.tbl {
+	border: 1px solid #ccc;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+table.tbl td {
+	border: 1px solid #ccc;
+	padding: 5px;
+}
+
+table.tbl > thead td {
+	background-color: #777;
+	color: #fff;
+	font-weight: bolder
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+table.tbl.striped > tbody > tr:nth-child(odd) > td {
+	background-color: #eee;
+}
+table.tbl.striped > tbody > tr:nth-child(even) > td {
+	background-color: #ddd;
+}
+
+table.tbl.hover > tbody > tr:hover > td {
+	background-color: #ccc;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Form Validation</title>
+	
+	<style type="text/css">
+
+		form > div {
+			margin: 5px;
+		}
+		form > div > label {
+			width: 200px;
+			display: inline-block;
+		}
+
+		form > div > div {
+			width: 700px;
+			display: inline-block;
+		}
+
+		form input, form button {
+			padding: 5px;
+			font-size: 1.05em;
+		}
+
+		.err {
+			color: red;
+			font-size: .8em;
+			font-style: italic;
+		}
+
+	</style>
+
+	<script type="text/javascript" src="../jquery/jquery-3.2.1.js"></script>
+
+	<script type="text/javascript">
+	function validate(){
+
+		var valid = true;
+
+		// clear all existing error messages
+		$("span.err").empty();
+
+		var username = $("#username").val();
+		if(!username){
+			valid = false;
+			$("#errUsername").html("Username is required!");
+		}
+
+		if(username && (username.length<3 || username.length>15)){
+			valid = false;
+			$("#errUsername").html("Username must be between 3 to 15 letters!");
+		}
+
+		var password = $("#password").val();
+		if(!password){
+			valid = false;
+			$("#errPassword").html("Password is required!");
+		}
+
+		return valid;
+	}
+
+
+	</script>
+</head>
+<body>
+
+	<div class="container">
+		
+		<h1>Login required</h1>
+
+		<hr>
+
+		<form onsubmit="return validate()" action="http://facebook.com" method="POST">
+			<div>
+				<label for="username">Username / Email</label>
+				<div>
+					<input type="text" name="username" id="username" >
+					<span class="err" id="errUsername"></span>
+				</div>
+			</div>
+			<div>
+				<label for="password">Password</label>
+				<div>
+					<input type="text" name="password" id="password" >
+					<span class="err" id="errPassword"></span>
+				</div>
+			</div>
+			<div>
+				<label></label>
+				<div>
+					<button>Login</button>
+				</div>
+			</div>
+		</form>
+
+	</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

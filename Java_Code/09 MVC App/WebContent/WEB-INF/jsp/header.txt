@@ -1,0 +1,33 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css">
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Contacts MVC App</title>
+</head>
+<body>
+	<div class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="./">Contacts MVC App</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li><a href="./list-all">List all contacts</a></li>
+				<li><a href="./add-new">Add a new contact</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="container" style="margin-top: 70px; margin-bottom: 70px;">
+
+	
+	
+	
+	
+	
+	
+	
+	

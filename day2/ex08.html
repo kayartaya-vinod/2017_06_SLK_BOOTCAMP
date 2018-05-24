@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Basics of CSS</title>
+	<style type="text/css">
+
+		/* tag/element selector */
+		h1 {
+			color: #4b5bb1;
+		}
+
+		/* class selector */
+		.pinkish {
+			background-color: pink;
+			color: red;
+		}
+		
+		.blueish {
+			background-color: lightblue;
+			color: blue;
+		}
+
+		/* ancestor - decendent */
+		ol li {
+			background-color: green;
+			color: lime;
+		}
+
+		/* parent - child */
+		p > span {
+			background-color: yellow;
+			color: red;
+			font-weight: bolder;
+		}
+
+		/* pseudo selector */
+		p > span:hover {
+			font-size: 1.2em;
+			/*border: 3px dashed red;*/
+			border-style: solid;
+			border-color: red;
+			border-width: 3px;
+		}
+
+		/* id selector */
+		#img1 {
+			height: 150px;
+			border-radius: 10px;
+			opacity: .25;
+		}
+
+		#img1:hover {
+			opacity: 1;
+		}
+
+	</style>
+</head>
+<body>
+
+	<h1>Basics of CSS</h1>
+
+	<div>
+		<img id="img1" src="../images/eagle.jpg">
+	</div>
+
+	<hr>
+
+	<p class="blueish">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <span>incididunt ut labore</span> et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in <span>voluptate velit esse</span> cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+	<div class="pinkish">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <span>quis nostrud</span> exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit <span>esse cillum dolore</span> eu <span>fugiat nulla pariatur</span>. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+
+	
+
+	<h1>List of names</h1>
+	<ul>
+		<li>Vinod Kumar</li>
+		<li class="blueish">John Doe</li>
+		<li class="pinkish">Jane Doe</li>
+		<li>Satya</li>
+		<li>Tulsi</li>
+	</ul>
+
+	<h1>List of cities</h1>
+	<ol>
+		<li>Bangalore</li>
+		<li>Mysore</li>
+		<li>Shivamogga</li>
+	</ol>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+

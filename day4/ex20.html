@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Image Slideshow</title>
+
+	<style type="text/css">
+		div#pictures > img {
+			position: absolute;
+			left: 50px;
+			top: 100px;
+			width: 400px;
+			height: 300px;
+			border-radius: 10px;
+		}
+	</style>
+
+	<script type="text/javascript" src="../jquery/jquery-3.2.1.js"></script>
+
+	<script type="text/javascript">
+		
+	// DOM-READY event handler
+	$(function(){
+
+		$("div#pictures > img")
+		.click(function(){
+			$(this).fadeOut(1000, function(){
+				$("div#pictures").prepend($(this));
+				$(this).css("display", "block");
+			});
+		});
+
+	});
+
+	</script>
+</head>
+<body>
+
+	<h1>jQuery Image Slideshow</h1>
+	<hr>
+
+	<div id="pictures">
+		<img src="http://lorempixel.com/400/300/sports/1">
+		<img src="http://lorempixel.com/400/300/sports/2">
+		<img src="http://lorempixel.com/500/200/sports/3">
+		<img src="http://lorempixel.com/500/200/city/1">
+		<img src="http://lorempixel.com/500/200/city/2">
+		<img src="http://lorempixel.com/400/300/animals/1">
+		<img src="http://lorempixel.com/400/300/animals/2">
+		<img src="http://lorempixel.com/400/300/animals/3">
+	</div>
+
+</body>
+</html>

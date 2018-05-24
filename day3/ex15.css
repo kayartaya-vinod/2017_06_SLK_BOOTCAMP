@@ -1,0 +1,41 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.err {
+	color: red;
+	font-weight: bolder;
+	font-size: 1.2em;
+}
+
+input[type=text] {
+	padding: 5px;
+	height: 30px;
+	font-size: 1.2em;
+}
+
+button {
+	padding: 5px;
+	height: 45px;
+	font-size: 1.2em;
+}
+
+div#output > div {
+	padding: 5px 0;
+	font-family: monaco, verdana;
+	color: green;
+}
+
+
+
+
+
+
+
+

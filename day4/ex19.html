@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery events</title>
+
+	<style type="text/css">	
+		button {
+			padding: 10px;
+			font-size: 1.2em;
+		}
+	</style>
+
+	<script type="text/javascript" src="../jquery/jquery-3.2.1.js"></script>
+
+	<script type="text/javascript">
+
+		// dom ready event handler
+		$(function(){
+
+			// button click handler
+			$("#btnShowHide").click(function(){
+
+				// $(this) corresponds to the button being clicked
+				var caption = $(this).text();
+
+				if(caption=="Hide Picture"){
+					// hide the picture
+					$("img#pic1").fadeOut(2000, function(){
+						// change the caption to "Show Picture"
+						$("#btnShowHide").text("Show Picture");
+					});
+					
+				}
+				else {
+					// show the picture
+					$("img#pic1").fadeIn(2000, function(){
+						// change the caption to "Hide Picture"
+						$("#btnShowHide").text("Hide Picture");
+					});
+					
+				}
+			});
+
+		});
+		
+	</script>
+</head>
+<body>
+	<h1>jQuery events</h1>
+	<hr>
+
+	<button id="btnShowHide">Hide Picture</button>
+	<div>
+		
+		<img id="pic1" src="../images/eagle.jpg" >
+
+	</div>
+	<p>Demo by Vinod Kumar</p>
+</body>
+</html>

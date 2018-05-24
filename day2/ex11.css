@@ -1,0 +1,29 @@
+/* ex11.css */
+
+img {
+	border-radius: 10px;
+}
+
+img:hover {
+	box-shadow: 0 0 30px yellow;
+}
+
+#img3 {
+	position: absolute;
+	left: 350px;
+	top: 350px;
+	z-index: 2;
+}
+
+#img4 {
+	position: absolute;
+	left: 450px;
+	top: 450px;
+	z-index: 22;
+}
+
+#img2 {
+	position: relative;
+	left: 100px;
+	top: -100px;
+}

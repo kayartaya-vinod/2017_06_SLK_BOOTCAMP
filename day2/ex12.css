@@ -1,0 +1,33 @@
+/* ex12.css */
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 1000px;
+	margin: 0 auto;
+	height: 100%;
+}
+
+.container > div {
+	border: 1px solid black;
+	padding: 20px;
+	display: inline-block;
+	height: 500px;
+}
+
+.left-sidebar {
+	width: 20%;
+}
+.main-content {
+	width: 45%;
+}
+.right-sidebar {
+	width: 20%;
+}
+
+
+
+

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Table for an input number</title>
+</head>
+<body>
+	<h1>Table for an input number</h1>
+	<hr />
+	<%
+		int num = 18;
+		for(int i=1; i<=10; i++){
+			String str = String.format("%d X %d = %d<br />", num, i, num*i);
+			out.println(str);
+		}
+	%>
+</body>
+</html>
